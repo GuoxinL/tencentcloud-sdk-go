@@ -159,24 +159,24 @@ func (c *Client) sendWithSignatureV1(request tchttp.Request, response tchttp.Res
 
 func (c *Client) sendWithSignatureV3(request tchttp.Request, response tchttp.Response) (err error) {
 	headers := map[string]string{
-		"Host":               request.GetDomain(),
-		"X-TC-Action":        request.GetAction(),
-		"X-TC-Version":       request.GetVersion(),
-		"X-TC-Timestamp":     request.GetParams()["Timestamp"],
-		"X-TC-RequestClient": request.GetParams()["RequestClient"],
-		"X-TC-Language":      c.profile.Language,
+		"Host":           request.GetDomain(),
+		"X-TC-Action":    request.GetAction(),
+		"X-TC-Version":   request.GetVersion(),
+		"X-TC-Timestamp": request.GetParams()["Timestamp"],
+		//"X-TC-RequestClient": request.GetParams()["RequestClient"],
+		//"X-TC-Language":      c.profile.Language,
 	}
-	if c.region != "" {
-		headers["X-TC-Region"] = c.region
-	}
-	if c.credential.GetToken() != "" {
-		headers["X-TC-Token"] = c.credential.GetToken()
-	}
-	if request.GetHttpMethod() == "GET" {
-		headers["Content-Type"] = "application/x-www-form-urlencoded"
-	} else {
-		headers["Content-Type"] = "application/json"
-	}
+	//if c.region != "" {
+	//	headers["X-TC-Region"] = c.region
+	//}
+	//if c.credential.GetToken() != "" {
+	//	headers["X-TC-Token"] = c.credential.GetToken()
+	//}
+	//if request.GetHttpMethod() == "GET" {
+	//	headers["Content-Type"] = "application/x-www-form-urlencoded"
+	//} else {
+	//	headers["Content-Type"] = "application/json"
+	//}
 	isOctetStream := false
 	cr := &tchttp.CommonRequest{}
 	ok := false
@@ -314,11 +314,26 @@ func (c *Client) sendWithSignatureV3(request tchttp.Request, response tchttp.Res
 	for k, v := range headers {
 		httpRequest.Header[k] = []string{v}
 	}
+	fmt.Println("Header: ")
+	for key, val := range httpRequest.Header {
+		fmt.Println(key, ":", val)
+	}
+	fmt.Println()
+	fmt.Println("Body: ")
+	fmt.Println(requestPayload)
+	fmt.Println()
 	httpResponse, err := c.sendWithRateLimitRetry(httpRequest, isRetryable(request))
 	if err != nil {
 		return err
 	}
 	err = tchttp.ParseFromHttpResponse(httpResponse, response)
+	fmt.Println("Response: ")
+	marshal, err := json.Marshal(response)
+	if err != nil {
+		return err
+	}
+	fmt.Println(string(marshal))
+	fmt.Println()
 	return err
 }
 

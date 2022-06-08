@@ -15,9 +15,9 @@
 package v20190118
 
 import (
-    "encoding/json"
-    tcerr "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/errors"
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	"encoding/json"
+	tcerr "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/errors"
+	tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AlgorithmInfo struct {
@@ -37,8 +37,8 @@ type ArchiveKeyRequest struct {
 }
 
 func (r *ArchiveKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -65,8 +65,8 @@ type ArchiveKeyResponse struct {
 }
 
 func (r *ArchiveKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -89,8 +89,8 @@ type AsymmetricRsaDecryptRequest struct {
 }
 
 func (r *AsymmetricRsaDecryptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -125,8 +125,8 @@ type AsymmetricRsaDecryptResponse struct {
 }
 
 func (r *AsymmetricRsaDecryptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -146,8 +146,8 @@ type AsymmetricSm2DecryptRequest struct {
 }
 
 func (r *AsymmetricSm2DecryptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -181,8 +181,8 @@ type AsymmetricSm2DecryptResponse struct {
 }
 
 func (r *AsymmetricSm2DecryptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -205,8 +205,8 @@ type BindCloudResourceRequest struct {
 }
 
 func (r *BindCloudResourceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -235,8 +235,8 @@ type BindCloudResourceResponse struct {
 }
 
 func (r *BindCloudResourceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -253,8 +253,8 @@ type CancelKeyArchiveRequest struct {
 }
 
 func (r *CancelKeyArchiveRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -281,8 +281,8 @@ type CancelKeyArchiveResponse struct {
 }
 
 func (r *CancelKeyArchiveResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -299,8 +299,8 @@ type CancelKeyDeletionRequest struct {
 }
 
 func (r *CancelKeyDeletionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -330,8 +330,8 @@ type CancelKeyDeletionResponse struct {
 }
 
 func (r *CancelKeyDeletionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -363,8 +363,8 @@ type CreateKeyRequest struct {
 }
 
 func (r *CreateKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -400,7 +400,7 @@ type CreateKeyResponse struct {
 		CreateTime *uint64 `json:"CreateTime,omitempty" name:"CreateTime"`
 
 		// CMK的描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Description *string `json:"Description,omitempty" name:"Description"`
 
 		// CMK的状态
@@ -410,15 +410,15 @@ type CreateKeyResponse struct {
 		KeyUsage *string `json:"KeyUsage,omitempty" name:"KeyUsage"`
 
 		// 标签操作的返回码. 0: 成功；1: 内部错误；2: 业务处理错误
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TagCode *uint64 `json:"TagCode,omitempty" name:"TagCode"`
 
 		// 标签操作的返回信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TagMsg *string `json:"TagMsg,omitempty" name:"TagMsg"`
 
 		// HSM 集群 ID（仅对 KMS 独占版/托管版服务实例有效）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		HsmClusterId *string `json:"HsmClusterId,omitempty" name:"HsmClusterId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -427,8 +427,8 @@ type CreateKeyResponse struct {
 }
 
 func (r *CreateKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -454,8 +454,8 @@ type CreateWhiteBoxKeyRequest struct {
 }
 
 func (r *CreateWhiteBoxKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -489,11 +489,11 @@ type CreateWhiteBoxKeyResponse struct {
 		KeyId *string `json:"KeyId,omitempty" name:"KeyId"`
 
 		// 标签操作的返回码. 0: 成功；1: 内部错误；2: 业务处理错误
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TagCode *uint64 `json:"TagCode,omitempty" name:"TagCode"`
 
 		// 标签操作的返回信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TagMsg *string `json:"TagMsg,omitempty" name:"TagMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -502,8 +502,8 @@ type CreateWhiteBoxKeyResponse struct {
 }
 
 func (r *CreateWhiteBoxKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -529,8 +529,8 @@ type DecryptRequest struct {
 }
 
 func (r *DecryptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -558,7 +558,7 @@ type DecryptResponse struct {
 		KeyId *string `json:"KeyId,omitempty" name:"KeyId"`
 
 		// 若调用时未提供 EncryptionPublicKey，该字段值为 Base64 编码的明文，需进行 Base64 解码以获取明文。
-	// 若调用时提供了 EncryptionPublicKey，则该字段值为使用 EncryptionPublicKey 公钥进行非对称加密后的 Base64 编码的密文。需在 Base64 解码后，使用用户上传的公钥对应的私钥进行进一步解密，以获取明文。
+		// 若调用时提供了 EncryptionPublicKey，则该字段值为使用 EncryptionPublicKey 公钥进行非对称加密后的 Base64 编码的密文。需在 Base64 解码后，使用用户上传的公钥对应的私钥进行进一步解密，以获取明文。
 		Plaintext *string `json:"Plaintext,omitempty" name:"Plaintext"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -567,8 +567,8 @@ type DecryptResponse struct {
 }
 
 func (r *DecryptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -585,8 +585,8 @@ type DeleteImportedKeyMaterialRequest struct {
 }
 
 func (r *DeleteImportedKeyMaterialRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -613,8 +613,8 @@ type DeleteImportedKeyMaterialResponse struct {
 }
 
 func (r *DeleteImportedKeyMaterialResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -631,8 +631,8 @@ type DeleteWhiteBoxKeyRequest struct {
 }
 
 func (r *DeleteWhiteBoxKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -659,8 +659,8 @@ type DeleteWhiteBoxKeyResponse struct {
 }
 
 func (r *DeleteWhiteBoxKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -677,8 +677,8 @@ type DescribeKeyRequest struct {
 }
 
 func (r *DescribeKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -700,7 +700,7 @@ type DescribeKeyResponse struct {
 	Response *struct {
 
 		// 密钥属性信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		KeyMetadata *KeyMetadata `json:"KeyMetadata,omitempty" name:"KeyMetadata"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -709,8 +709,8 @@ type DescribeKeyResponse struct {
 }
 
 func (r *DescribeKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -727,8 +727,8 @@ type DescribeKeysRequest struct {
 }
 
 func (r *DescribeKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -750,7 +750,7 @@ type DescribeKeysResponse struct {
 	Response *struct {
 
 		// 返回的属性信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		KeyMetadatas []*KeyMetadata `json:"KeyMetadatas,omitempty" name:"KeyMetadatas"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -759,8 +759,8 @@ type DescribeKeysResponse struct {
 }
 
 func (r *DescribeKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -777,8 +777,8 @@ type DescribeWhiteBoxDecryptKeyRequest struct {
 }
 
 func (r *DescribeWhiteBoxDecryptKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -808,8 +808,8 @@ type DescribeWhiteBoxDecryptKeyResponse struct {
 }
 
 func (r *DescribeWhiteBoxDecryptKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -826,8 +826,8 @@ type DescribeWhiteBoxDeviceFingerprintsRequest struct {
 }
 
 func (r *DescribeWhiteBoxDeviceFingerprintsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -857,8 +857,8 @@ type DescribeWhiteBoxDeviceFingerprintsResponse struct {
 }
 
 func (r *DescribeWhiteBoxDeviceFingerprintsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -884,8 +884,8 @@ type DescribeWhiteBoxKeyDetailsRequest struct {
 }
 
 func (r *DescribeWhiteBoxKeyDetailsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -913,7 +913,7 @@ type DescribeWhiteBoxKeyDetailsResponse struct {
 		KeyInfos []*WhiteboxKeyInfo `json:"KeyInfos,omitempty" name:"KeyInfos"`
 
 		// key总数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -922,8 +922,8 @@ type DescribeWhiteBoxKeyDetailsResponse struct {
 }
 
 func (r *DescribeWhiteBoxKeyDetailsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -940,8 +940,8 @@ type DescribeWhiteBoxKeyRequest struct {
 }
 
 func (r *DescribeWhiteBoxKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -971,8 +971,8 @@ type DescribeWhiteBoxKeyResponse struct {
 }
 
 func (r *DescribeWhiteBoxKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -986,8 +986,8 @@ type DescribeWhiteBoxServiceStatusRequest struct {
 }
 
 func (r *DescribeWhiteBoxServiceStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1016,8 +1016,8 @@ type DescribeWhiteBoxServiceStatusResponse struct {
 }
 
 func (r *DescribeWhiteBoxServiceStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1044,8 +1044,8 @@ type DisableKeyRequest struct {
 }
 
 func (r *DisableKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1072,8 +1072,8 @@ type DisableKeyResponse struct {
 }
 
 func (r *DisableKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1090,8 +1090,8 @@ type DisableKeyRotationRequest struct {
 }
 
 func (r *DisableKeyRotationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1118,8 +1118,8 @@ type DisableKeyRotationResponse struct {
 }
 
 func (r *DisableKeyRotationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1136,8 +1136,8 @@ type DisableKeysRequest struct {
 }
 
 func (r *DisableKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1164,8 +1164,8 @@ type DisableKeysResponse struct {
 }
 
 func (r *DisableKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1182,8 +1182,8 @@ type DisableWhiteBoxKeyRequest struct {
 }
 
 func (r *DisableWhiteBoxKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1210,8 +1210,8 @@ type DisableWhiteBoxKeyResponse struct {
 }
 
 func (r *DisableWhiteBoxKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1228,8 +1228,8 @@ type DisableWhiteBoxKeysRequest struct {
 }
 
 func (r *DisableWhiteBoxKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1256,8 +1256,8 @@ type DisableWhiteBoxKeysResponse struct {
 }
 
 func (r *DisableWhiteBoxKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1274,8 +1274,8 @@ type EnableKeyRequest struct {
 }
 
 func (r *EnableKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1302,8 +1302,8 @@ type EnableKeyResponse struct {
 }
 
 func (r *EnableKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1320,8 +1320,8 @@ type EnableKeyRotationRequest struct {
 }
 
 func (r *EnableKeyRotationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1348,8 +1348,8 @@ type EnableKeyRotationResponse struct {
 }
 
 func (r *EnableKeyRotationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1366,8 +1366,8 @@ type EnableKeysRequest struct {
 }
 
 func (r *EnableKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1394,8 +1394,8 @@ type EnableKeysResponse struct {
 }
 
 func (r *EnableKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1412,8 +1412,8 @@ type EnableWhiteBoxKeyRequest struct {
 }
 
 func (r *EnableWhiteBoxKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1440,8 +1440,8 @@ type EnableWhiteBoxKeyResponse struct {
 }
 
 func (r *EnableWhiteBoxKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1458,8 +1458,8 @@ type EnableWhiteBoxKeysRequest struct {
 }
 
 func (r *EnableWhiteBoxKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1486,8 +1486,8 @@ type EnableWhiteBoxKeysResponse struct {
 }
 
 func (r *EnableWhiteBoxKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1510,8 +1510,8 @@ type EncryptByWhiteBoxRequest struct {
 }
 
 func (r *EncryptByWhiteBoxRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1546,8 +1546,8 @@ type EncryptByWhiteBoxResponse struct {
 }
 
 func (r *EncryptByWhiteBoxResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1570,8 +1570,8 @@ type EncryptRequest struct {
 }
 
 func (r *EncryptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1606,8 +1606,8 @@ type EncryptResponse struct {
 }
 
 func (r *EncryptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1639,8 +1639,8 @@ type GenerateDataKeyRequest struct {
 }
 
 func (r *GenerateDataKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1670,7 +1670,7 @@ type GenerateDataKeyResponse struct {
 		KeyId *string `json:"KeyId,omitempty" name:"KeyId"`
 
 		// 若调用时未提供 EncryptionPublicKey，该字段值为生成的数据密钥 DataKey 的 Base64 编码的明文，需进行 Base64 解码以获取 DataKey 明文。
-	// 若调用时提供了 EncryptionPublicKey，则该字段值为使用 EncryptionPublicKey 公钥进行非对称加密后的 Base64 编码的密文。需在 Base64 解码后，使用用户上传的公钥对应的私钥进行进一步解密，以获取 DataKey 明文。
+		// 若调用时提供了 EncryptionPublicKey，则该字段值为使用 EncryptionPublicKey 公钥进行非对称加密后的 Base64 编码的密文。需在 Base64 解码后，使用用户上传的公钥对应的私钥进行进一步解密，以获取 DataKey 明文。
 		Plaintext *string `json:"Plaintext,omitempty" name:"Plaintext"`
 
 		// 数据密钥DataKey加密后的密文，用户需要自行保存该密文，KMS不托管用户的数据密钥。可以通过Decrypt接口从CiphertextBlob中获取数据密钥DataKey明文
@@ -1682,8 +1682,8 @@ type GenerateDataKeyResponse struct {
 }
 
 func (r *GenerateDataKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1700,8 +1700,8 @@ type GenerateRandomRequest struct {
 }
 
 func (r *GenerateRandomRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1731,8 +1731,8 @@ type GenerateRandomResponse struct {
 }
 
 func (r *GenerateRandomResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1749,8 +1749,8 @@ type GetKeyRotationStatusRequest struct {
 }
 
 func (r *GetKeyRotationStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1780,8 +1780,8 @@ type GetKeyRotationStatusResponse struct {
 }
 
 func (r *GetKeyRotationStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1804,8 +1804,8 @@ type GetParametersForImportRequest struct {
 }
 
 func (r *GetParametersForImportRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1846,8 +1846,8 @@ type GetParametersForImportResponse struct {
 }
 
 func (r *GetParametersForImportResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1864,8 +1864,8 @@ type GetPublicKeyRequest struct {
 }
 
 func (r *GetPublicKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1901,8 +1901,8 @@ type GetPublicKeyResponse struct {
 }
 
 func (r *GetPublicKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1916,8 +1916,8 @@ type GetRegionsRequest struct {
 }
 
 func (r *GetRegionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1938,7 +1938,7 @@ type GetRegionsResponse struct {
 	Response *struct {
 
 		// 可用region列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Regions []*string `json:"Regions,omitempty" name:"Regions"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1947,8 +1947,8 @@ type GetRegionsResponse struct {
 }
 
 func (r *GetRegionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1962,8 +1962,8 @@ type GetServiceStatusRequest struct {
 }
 
 func (r *GetServiceStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -1987,30 +1987,30 @@ type GetServiceStatusResponse struct {
 		ServiceEnabled *bool `json:"ServiceEnabled,omitempty" name:"ServiceEnabled"`
 
 		// 服务不可用类型： 0-未购买，1-正常， 2-欠费停服， 3-资源释放
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InvalidType *int64 `json:"InvalidType,omitempty" name:"InvalidType"`
 
 		// 0-普通版，1-旗舰版
 		UserLevel *uint64 `json:"UserLevel,omitempty" name:"UserLevel"`
 
 		// 旗舰版到期时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProExpireTime *uint64 `json:"ProExpireTime,omitempty" name:"ProExpireTime"`
 
 		// 旗舰版是否自动续费：0-不自动续费，1-自动续费
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProRenewFlag *uint64 `json:"ProRenewFlag,omitempty" name:"ProRenewFlag"`
 
 		// 旗舰版购买记录的唯一性标识。如果为开通旗舰版，则返回值为空
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProResourceId *string `json:"ProResourceId,omitempty" name:"ProResourceId"`
 
 		// 是否开通 KMS 托管版
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ExclusiveVSMEnabled *bool `json:"ExclusiveVSMEnabled,omitempty" name:"ExclusiveVSMEnabled"`
 
 		// 是否开通 KMS 独享版
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ExclusiveHSMEnabled *bool `json:"ExclusiveHSMEnabled,omitempty" name:"ExclusiveHSMEnabled"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2019,8 +2019,8 @@ type GetServiceStatusResponse struct {
 }
 
 func (r *GetServiceStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2046,8 +2046,8 @@ type ImportKeyMaterialRequest struct {
 }
 
 func (r *ImportKeyMaterialRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2077,8 +2077,8 @@ type ImportKeyMaterialResponse struct {
 }
 
 func (r *ImportKeyMaterialResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2153,8 +2153,8 @@ type ListAlgorithmsRequest struct {
 }
 
 func (r *ListAlgorithmsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2189,8 +2189,8 @@ type ListAlgorithmsResponse struct {
 }
 
 func (r *ListAlgorithmsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2234,8 +2234,8 @@ type ListKeyDetailRequest struct {
 }
 
 func (r *ListKeyDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2269,7 +2269,7 @@ type ListKeyDetailResponse struct {
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 返回的属性信息列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		KeyMetadatas []*KeyMetadata `json:"KeyMetadatas,omitempty" name:"KeyMetadatas"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2278,8 +2278,8 @@ type ListKeyDetailResponse struct {
 }
 
 func (r *ListKeyDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2305,8 +2305,8 @@ type ListKeysRequest struct {
 }
 
 func (r *ListKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2331,7 +2331,7 @@ type ListKeysResponse struct {
 	Response *struct {
 
 		// CMK列表数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Keys []*Key `json:"Keys,omitempty" name:"Keys"`
 
 		// CMK的总数量
@@ -2343,8 +2343,8 @@ type ListKeysResponse struct {
 }
 
 func (r *ListKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2364,8 +2364,8 @@ type OverwriteWhiteBoxDeviceFingerprintsRequest struct {
 }
 
 func (r *OverwriteWhiteBoxDeviceFingerprintsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2393,8 +2393,8 @@ type OverwriteWhiteBoxDeviceFingerprintsResponse struct {
 }
 
 func (r *OverwriteWhiteBoxDeviceFingerprintsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2420,8 +2420,8 @@ type ReEncryptRequest struct {
 }
 
 func (r *ReEncryptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2463,8 +2463,8 @@ type ReEncryptResponse struct {
 }
 
 func (r *ReEncryptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2484,8 +2484,8 @@ type ScheduleKeyDeletionRequest struct {
 }
 
 func (r *ScheduleKeyDeletionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2519,8 +2519,8 @@ type ScheduleKeyDeletionResponse struct {
 }
 
 func (r *ScheduleKeyDeletionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2546,8 +2546,8 @@ type SignByAsymmetricKeyRequest struct {
 }
 
 func (r *SignByAsymmetricKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2580,8 +2580,8 @@ type SignByAsymmetricKeyResponse struct {
 }
 
 func (r *SignByAsymmetricKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2622,8 +2622,8 @@ type UnbindCloudResourceRequest struct {
 }
 
 func (r *UnbindCloudResourceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2652,8 +2652,8 @@ type UnbindCloudResourceResponse struct {
 }
 
 func (r *UnbindCloudResourceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2673,8 +2673,8 @@ type UpdateAliasRequest struct {
 }
 
 func (r *UpdateAliasRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2702,8 +2702,8 @@ type UpdateAliasResponse struct {
 }
 
 func (r *UpdateAliasResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2723,8 +2723,8 @@ type UpdateKeyDescriptionRequest struct {
 }
 
 func (r *UpdateKeyDescriptionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2752,8 +2752,8 @@ type UpdateKeyDescriptionResponse struct {
 }
 
 func (r *UpdateKeyDescriptionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2782,8 +2782,8 @@ type VerifyByAsymmetricKeyRequest struct {
 }
 
 func (r *VerifyByAsymmetricKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
@@ -2817,8 +2817,8 @@ type VerifyByAsymmetricKeyResponse struct {
 }
 
 func (r *VerifyByAsymmetricKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // FromJsonString It is highly **NOT** recommended to use this function
